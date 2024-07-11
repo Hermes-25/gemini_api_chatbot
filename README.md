@@ -46,3 +46,6 @@ streamlit run app.py
 
 # About
 - This Amazon Customer Support Bot aims to enhance customer interaction by providing efficient and accurate responses to common queries regarding Amazon's products and services. It utilizes advanced AI technologies for natural language processing and response generation.
+
+
+![WhatsApp Image 2024-07-11 at 12 08 17_cd7fff76](https://github.com/Hermes-25/gemini_api_chatbot/assets/152592240/f36fc2f0-cbcf-497c-992a-ef55107d1607)
