@@ -16,3 +16,33 @@ Ensure you have the following installed and configured before running the applic
 2. **Dependencies:** Install required Python packages using:
    ```bash
    pip install -r requirements.txt
+
+3. Include dependencies such as Streamlit, PyPDF2, Langchain, Google Generative AI, etc.
+
+## API Keys: Obtain API keys for Google Generative AI and store them in a .env file:
+```bash
+GOOGLE_API_KEY=your_api_key_here
+```
+# Installation
+## Clone the repository:
+```bash
+git clone https://github.com/your_username/amazon-support-bot.git
+cd amazon-support-bot
+```
+## Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+## Usage
+### Run the application:
+```bash
+streamlit run app.py
+```
+## Open your web browser: Navigate to http://localhost:8501 to interact with the bot.
+
+1. Input Queries: Enter questions related to Amazon services or products in the text input field.
+
+2. View Responses: The bot will generate responses based on the queries, leveraging AI models and stored FAQ information.
+
+# About
+- This Amazon Customer Support Bot aims to enhance customer interaction by providing efficient and accurate responses to common queries regarding Amazon's products and services. It utilizes advanced AI technologies for natural language processing and response generation.
