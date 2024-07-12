@@ -49,3 +49,5 @@ streamlit run app.py
 
 
 ![WhatsApp Image 2024-07-11 at 12 08 17_cd7fff76](https://github.com/Hermes-25/gemini_api_chatbot/assets/152592240/f36fc2f0-cbcf-497c-992a-ef55107d1607)
+![image](https://github.com/user-attachments/assets/46a81adf-d2da-4e90-bbc8-19a5eb059af2)
+
