@@ -2,7 +2,7 @@
 # Amazon Customer Support Bot
 
 ## Overview
-This project implements an AI-powered customer support bot for Amazon using Streamlit, Google Generative AI, Gemini API, and Langchain embeddings. The bot interacts with users, answers queries based on stored FAQ documents, and provides personalized responses.
+This project implements an AI-powered customer support bot for Amazon using Streamlit, Google Generative AI, Gemini API, and Langchain embeddings. The bot interacts with users, answers queries based on stored FAQ documents and the customer database, and provides personalized responses.
 
 ## Features
 - **PDF Processing:** Extracts and splits text from PDF documents containing FAQs.
