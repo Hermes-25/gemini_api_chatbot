@@ -19,6 +19,7 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 # Define PDF file paths
 PDF_FILES = [
     "AMAZON_FAQs_v1.pdf",
+    "customer_data_ecommerce_v2.pdf"
     
 ]
 
@@ -43,18 +44,22 @@ def get_vector_store(text_chunks):
 
 def get_conversational_chain():
     prompt_template = """
-    Search through the provided FAQ document to find a relevant answer.
+    Search through the provided FAQ document for inquiries and the customer data document for user centric questions , to find a relevant answer.
+    The FAQ document is for user inquiries and FAQs, but the customer data is for personalised questions of the user where the user wants some user specific data.
+
     
     If you find a relevant answer, respond with a clear and friendly message based on the information from the FAQs.
 
     If the question has some personal questions reply in a friendly manner like for the question, "i want to surprise my girlfriend on her bday by sending a gift to her address , can you guide me with the steps?",
     answer can be like,"Wow thats so sweet of you! Here are the steps to change the shipping address and gift wrap the order", and then provide details on chaging addres and gift wrapping from the PDF document.
     
+    If the question is asking to retrieve some personal data, search the cutomer data document for it and give a reply.
+
     Also after every reply you give, in the end leave a line and say, "I hope that solves your query, if not please contact our customer care at, https://www.amazon.in/gp/help/customer/contact-us"  
     If the question is asking you to do some task like placing orders,returns,exchanges,making calls etc. , like,"Can you place an order for me?", reply in a friendly manner like,"Sorry, I am an AI Model and I can't do that for you, but i can definitely give you steps to do it by yourself", then give the steps to place an order.
 
     If you don't find a relevant answer, respond with the following fallback message:
-    "Sorry, I couldn't find the information you're looking for in our FAQ document. Please feel free to contact our customer support team for further assistance."\n\n
+    "Sorry, I couldn't find the information you're looking for in our FAQ document or customer data base. Please feel free to contact our customer support team for further assistance."\n\n
     Context:\n {context}?\n
     Question: \n{question}\n
     
@@ -129,3 +134,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+
